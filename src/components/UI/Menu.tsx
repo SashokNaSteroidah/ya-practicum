@@ -12,9 +12,9 @@ const Menu: FC = () => {
                 <hr/>
                 <Link to={'/about'}>Время историй</Link>
                 <hr/>
-                <Link>Исходники</Link>
+                <Link to={'/source'}>Исходники</Link>
                 <hr/>
-                <Link>Урок</Link>
+                <Link to={'/screen-cast'}>Урок</Link>
             </nav>
         </aside>
     );
