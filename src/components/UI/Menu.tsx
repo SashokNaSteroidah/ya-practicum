@@ -1,20 +1,21 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styles from "./menu.module.sass"
+import {Link} from "react-router-dom";
 
-const Menu:FC = () => {
+const Menu: FC = () => {
 
 
     return (
         <aside className={styles.menu}>
-            <ul>
-                <li >Фоточки</li>
+            <nav>
+                <Link to={'/'}>Фоточки</Link>
                 <hr/>
-                <li>Время историй</li>
+                <Link to={'/about'}>Время историй</Link>
                 <hr/>
-                <li>Исходники</li>
+                <Link>Исходники</Link>
                 <hr/>
-                <li>Урок</li>
-            </ul>
+                <Link>Урок</Link>
+            </nav>
         </aside>
     );
 };
