@@ -11,7 +11,7 @@ const SourceCode: FC = () => {
         isLoading
             ? <Loader/>
             : <section className={styles.SourceCode}>
-                <h1>Исходные коды проекта</h1>
+                <h1>Исходный код проекта</h1>
                 <article>
                     <a target='_blank' href='https://github.com/SashokNaSteroidah/ya-practicum'
                        className={styles.buttonStyle}>Исходный код</a>

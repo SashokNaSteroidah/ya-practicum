@@ -12,7 +12,12 @@ const VideoGallery:FC = () => {
             ? <Loader/>
             : <section className={styles.videoGallery}>
                 <h1>Скринкаст</h1>
-                <video controls={true} src="http://s91026w9.beget.tech/video_screencast.mp4" />
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/I6qUdUEBQ5A" title="Фишки CSS"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen>
+
+                </iframe>
                 <article>
                     <span className={styles.italic}>А вот и небольшой скринкаст на тему одной фишки CSS</span>
                 </article>
