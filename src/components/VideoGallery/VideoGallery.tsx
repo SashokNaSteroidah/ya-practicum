@@ -12,7 +12,7 @@ const VideoGallery:FC = () => {
             ? <Loader/>
             : <section className={styles.videoGallery}>
                 <h1>Скринкаст</h1>
-                <video controls={true} src="./00366_2.mp4"></video>
+                <video controls={true} src="http://s91026w9.beget.tech/video_screencast.mp4" />
                 <article>
                     <span className={styles.italic}>А вот и небольшой скринкаст на тему одной фишки CSS</span>
                 </article>
