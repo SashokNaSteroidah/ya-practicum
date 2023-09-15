@@ -1,6 +1,6 @@
 import React from 'react'
 import PhotoGallery from "./components/photoGallery/PhotoGallery";
-import Menu from "./components/UI/Menu";
+import Menu from "./components/UI/menu/Menu";
 import {Route, Routes} from "react-router-dom";
 import About from "./components/About/About";
 import SourceCode from "./components/SourceCode/SourceCode";

@@ -1,15 +1,22 @@
 import React from 'react';
 import styles from './sourceCode.module.sass'
+import {useLoader} from "../../hooks/useLoader";
+import Loader from "../UI/loader/Loader";
 
 const SourceCode = () => {
+
+    const isLoading = useLoader()
+
     return (
-        <section className={styles.SourceCode}>
-            <h1>Исходные коды проекта</h1>
-            <article>
-                <button className={styles.buttonStyle}>Исходный код</button>
-                <button className={styles.buttonStyle}>Сайт-портфолио</button>
-            </article>
-        </section>
+        isLoading
+            ? <Loader/>
+            : <section className={styles.SourceCode}>
+                <h1>Исходные коды проекта</h1>
+                <article>
+                    <a target='_blank' href='https://github.com/SashokNaSteroidah/ya-practicum'
+                       className={styles.buttonStyle}>Исходный код</a>
+                </article>
+            </section>
     );
 };
 
