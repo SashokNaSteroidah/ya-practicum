@@ -1,9 +1,9 @@
-import React from "react";
 import styles from './photoGallery.module.sass'
 import {useLoader} from "../../hooks/useLoader";
 import Loader from "../UI/loader/Loader";
+import {FC} from "react";
 
-const PhotoGallery = () => {
+const PhotoGallery: FC = () => {
 
     const isLoading = useLoader();
 

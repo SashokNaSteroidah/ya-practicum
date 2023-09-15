@@ -1,9 +1,9 @@
-import React from 'react';
 import styles from './sourceCode.module.sass'
 import {useLoader} from "../../hooks/useLoader";
 import Loader from "../UI/loader/Loader";
+import {FC} from "react";
 
-const SourceCode = () => {
+const SourceCode: FC = () => {
 
     const isLoading = useLoader()
 

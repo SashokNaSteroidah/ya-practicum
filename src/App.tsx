@@ -1,4 +1,3 @@
-import React from 'react'
 import PhotoGallery from "./components/photoGallery/PhotoGallery";
 import Menu from "./components/UI/menu/Menu";
 import {Route, Routes} from "react-router-dom";

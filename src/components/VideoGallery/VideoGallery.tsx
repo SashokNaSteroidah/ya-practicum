@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './videoGallery.module.sass'
+import {FC} from 'react';
 import {useLoader} from "../../hooks/useLoader";
+import styles from './videoGallery.module.sass'
 import Loader from "../UI/loader/Loader";
 
-const VideoGallery = () => {
+const VideoGallery:FC = () => {
 
     const isLoading = useLoader()
 
